@@ -1,10 +1,14 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
     <head>
-        <link th:src="@{/css/mystream.css}" rel="stylesheet"/>
+        <title>zoopaz-spring-web template application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link th:href="@{/resources/css/mystream.css}" type="text/css" rel="stylesheet" />
     </head>
     <body>
         <div>
             <p th:text="${openline}"><!-- set openline in IndexController --></p>
         </div>
+        <script th:src="@{/resources/js/mystream.js}" type="text/javascript" />
     </body>
 </html>
